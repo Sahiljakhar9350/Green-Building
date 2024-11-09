@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Divs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Container for divs */
+        .container {
+            display: flex;
+            justify-content: space-between;  /* Space between each div */
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            
+            background: linear-gradient(135deg, #1e90ff, #ff69b4); /* Gradient background */
+        }
+        
+        /* Styling each div box */
+        .box {
+            flex: 1;
+            margin: 0 15px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background: #2ecc71;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" onclick="goToPage('Welcom page.html')">Go to my Welcome page</div>
+        <div class="box" onclick="goToPage('second page.html')">Benefit of Green Building</div>
+        <div class="box" onclick="goToPage('Third page.html')">Future of Green Building</div>
+        <div class="box" onclick="goToPage('fourth page.html')">More about Green Building</div>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page; // Navigate to the page when the div is clicked
+        }
+    </script>
+</body>
+</html>

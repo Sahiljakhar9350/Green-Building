@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Green Building</title>
+  <style>
+    benefits {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+      
+      .benefits h2 {
+        text-align: center;
+        color: #00796b;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+      }
+      
+      /* Grid Layout for Benefit Items */
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 30px;
+      }
+      
+      .benefit-item {
+        background-color: #f1f8e9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .benefit-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Styling Images */
+      .benefit-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease;
+      }
+      
+      .benefit-item:hover img {
+        transform: scale(1.05);
+      }
+      
+      .benefit-item h3 {
+        font-size: 1.8em;
+        color: #388e3c;
+        margin-bottom: 10px;
+      }
+      
+      .benefit-item p {
+        font-size: 1.1em;
+        color: #555;
+      }
+      
+      /* Summary paragraph styling */
+      .benefits .summary {
+        text-align: center;
+        font-size: 1.2em;
+        color: #333;
+        padding: 20px;
+        line-height: 1.8;
+        background-color: #e8f5e9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .link-to-page {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+      }
+      
+      .link-box {
+        background-color: #4caf50;
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        width: 80%;
+        max-width: 600px;
+      }
+      
+      .link-box h3 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+      }
+      
+      .link-box p {
+        font-size: 1.1em;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      .link-box:hover {
+        background-color: #388e3c;
+        transform: translateY(-5px);
+      }
+      .corner-link {
+        position: fixed; /* Fixed position to always stay in the corner */
+        top: 20px; /* Distance from the top */
+        left: 20px; /* Distance from the left */
+        background-color: green; /* Blue background */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer; /* Shows a pointer when hovering */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    /* Hover effect for the div */
+    .corner-link:hover {
+        background-color: #e74c3c; /* Change color on hover */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+    
+    /* Optional: Add some general content styling */
+    .content {
+        margin: 100px; /* For demonstration, add some space around content */
+    }
+    
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+        .corner-link {
+            top: 10px;
+            left: 10px;
+            padding: 8px 15px;
+        }
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Other sections omitted for brevity -->
+
+  <!-- New Benefits of Green Building Section -->
+  <section class="benefits">
+    <h2>Benefits of Green Building</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <img src="asdf.jpg" alt="Energy Saving">
+        <h3>Energy Efficiency</h3>
+        <p>Green buildings are designed to consume less energy, using renewable sources like solar and wind power, resulting in lower utility costs and reduced carbon emissions.</p>
+      </div>
+      <div class="benefit-item">
+        <img src="earth.jpg" alt="Air Quality Improvement">
+        <h3>Improved Air Quality</h3>
+        <p>These buildings use non-toxic materials and promote better indoor air quality, reducing pollution and ensuring healthier living spaces for occupants.</p>
+      </div>
+    </div>
+    <p class="summary">Green buildings provide numerous advantages, including lower environmental impact, reduced operational costs, and healthier environments for people. They promote sustainability and conservation while addressing climate change challenges.</p>
+  </section>
+  <div class="link-to-page">
+    <a href="Third page.html">
+      <div class="link-box">
+        <h3>Click and Learn more about Green building</h3>
+        <p>Click here to explore more information on Future of Green building</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    
+  </footer>
+
+  <!-- Footer omitted for brevity -->
+</div>
+
+<!-- Add your form or other content here -->
+<a href="Home page.html"><div class="corner-link" >Go to Home Page</div></a>
+
+    <!-- Other content of your page -->
+    
+
+</body>
+</html>

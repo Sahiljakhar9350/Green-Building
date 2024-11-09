@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .future {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            background-color: #f0f4c3; /* Light green background */
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          }
+          
+          .future h2 {
+            text-align: center;
+            color: #558b2f; /* Darker green */
+            font-size: 2.5em;
+            margin-bottom: 40px;
+          }
+          
+          .future-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+          }
+          
+          .future-text {
+            flex: 1 1 500px;
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease-in-out;
+          }
+          
+          .future-images {
+            flex: 1 1 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          
+          .future-images img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          
+          .future-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+          }
+          
+          /* ===========================
+             Link to Another Page Styling
+             =========================== */
+          .link-to-page {
+            display: flex;
+            justify-content: center;
+            margin: 40px 20px;
+          }
+          
+          .link-box {
+            background-color: #4caf50;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 80%;
+            max-width: 600px;
+          }
+          
+          .link-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+          }
+          
+          .link-box p {
+            font-size: 1.1em;
+          }
+          
+          .link-box:hover {
+            background-color: #388e3c;
+            transform: translateY(-5px);
+          }
+          
+          .link-to-page a {
+            text-decoration: none;
+            color: inherit;
+            display: block; /* Ensures the entire div is clickable */
+          }
+          
+          /* ===========================
+             Footer Styling
+             =========================== */
+          .main-footer {
+            text-align: center;
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+          }
+          
+          /* ===========================
+             Animations
+             =========================== */
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(50px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          /* ===========================
+             Responsive Design
+             =========================== */
+          @media (max-width: 1024px) {
+            .future-content {
+              flex-direction: column;
+            }
+          }
+          
+          @media (max-width: 768px) {
+            .main-header h1 {
+              font-size: 2.5em;
+            }
+          
+            .features, .benefits, .future {
+              padding: 20px 10px;
+            }
+          
+            .features {
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            .feature-item {
+              margin: 15px 0;
+              width: 80%;
+            }
+          
+            .benefits-grid {
+              grid-template-columns: 1fr;
+              gap: 20px;
+            }
+          
+            .future-content {
+              flex-direction: column;
+            }
+          
+            .future-text, .future-images {
+              flex: 1 1 100%;
+            }
+          
+            .link-box {
+              width: 90%;
+            }
+          }
+          .corner-link {
+            position: fixed; /* Fixed position to always stay in the corner */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            background-color: green; /* Blue background */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer; /* Shows a pointer when hovering */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        /* Hover effect for the div */
+        .corner-link:hover {
+            background-color: #e74c3c; /* Change color on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+        
+        /* Optional: Add some general content styling */
+        .content {
+            margin: 100px; /* For demonstration, add some space around content */
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .corner-link {
+                top: 10px;
+                left: 10px;
+                padding: 8px 15px;
+            }
+          }
+    </style>
+</head>
+<body>
+    <section class="future">
+        <h2>Future of Green Building</h2>
+        <div class="future-content">
+          <div class="future-text">
+            <p><b>As the world grapples with climate change and resource depletion, the future of construction lies in sustainable and green building practices. We envision a world where all new constructions adhere to green standards, ensuring minimal environmental impact and promoting the well-being of inhabitants.</b></p>
+            <p><b>In the future, green buildings will not only be the norm but also the standard, integrating smart technologies, renewable energy sources, and eco-friendly materials to create harmonious living and working spaces that coexist with nature.</b></p>
+          </div>
+          <div class="future-images">
+            <img src="/future1.jpg" alt="Future Green Building 1">
+            <img src="/future2.webp" alt="Future Green Building 2">
+          </div>
+        </div>
+      </section>
+    
+      <!-- Link to Another Page Section -->
+      <div class="link-to-page">
+        <a href="fourth page.html">
+          <div class="link-box">
+            <h3>Click and Learn More About Green Building</h3>
+            <p>Click here to explore more information on green building practices, benefits, and examples!</p>
+          </div>
+        </a>
+      </div>
+    
+      <!-- Footer Section -->
+      <footer class="main-footer">
+        <p>Join the green building revolution for a sustainable future!</p>
+      </footer>
+    </div>
+
+    <!-- Add your form or other content here -->
+    <a href="Home page.html"><div class="corner-link" >Go to Home Page</div></a>
+    
+        <!-- Other content of your page -->
+        
+</body>
+</html>
